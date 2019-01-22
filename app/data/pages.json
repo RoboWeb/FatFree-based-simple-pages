@@ -1,0 +1,121 @@
+[
+  {
+    "iPageID": 1,
+    "sTitle": "Witamy",
+    "sSlug": "home",
+    "sMainTemplate": "home-layout.html",
+    "aIncludes" : {
+      "google_map": true
+    }
+  },
+  {
+    "iPageID": 2,
+    "sTitle": "Historia",
+    "sSlug": "o-nas",
+    "sPageTemplate": "o-nas.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/historia.jpg"
+    }
+  },
+  {
+    "iPageID": 3,
+    "sTitle": "Pokoje",
+    "sSlug": "pokoje",
+    "sPageTemplate": "pokoje.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/pokoje.jpg"
+    }
+  },
+  {
+    "iPageID": 4,
+    "sTitle": "Pokój",
+    "sSlug": "",
+    "sPageTemplate": "_pokoj.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/pokoje.jpg"
+    }
+  },
+  {
+    "iPageID": 5,
+    "sTitle": "Restauracja",
+    "sSlug": "restauracja",
+    "sPageTemplate": "restauracja.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/restauracja.jpg"
+    }
+  },
+  {
+    "iPageID": 6,
+    "sTitle": "Menu",
+    "sSlug": "",
+    "sPageTemplate": "_dania.html",
+    "sMainTemplate": "layout.html"
+  },
+  {
+    "iPageID": 7,
+    "sTitle": "Ogród",
+    "sSlug": "ogrod",
+    "sPageTemplate": "ogrod.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/ogrod.jpg",
+      "sMainImage": "media/garden/retro_ogrod_01.jpg",
+      "sGalleryDir": "media/garden/"
+    }
+  },
+  {
+    "iPageID": 8,
+    "sTitle": "Galeria",
+    "sSlug": "galeria",
+    "sPageTemplate": "galerie.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/galeria.jpg"
+    }
+  },
+  {
+    "iPageID": 9,
+    "sTitle": "Galeria",
+    "sSlug": "",
+    "sPageTemplate": "_galeria.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/galeria.jpg"
+    }
+  },
+  {
+    "iPageID": 10,
+    "sTitle": "Kontakt",
+    "sSlug": "kontakt",
+    "sPageTemplate": "kontakt.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/kontakt.jpg"
+    }
+  },
+  {
+    "iPageID": 11,
+    "sTitle": "Imprezy",
+    "sSlug": "imprezy",
+    "sPageTemplate": "imprezy.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/restauracja-1-bg.jpg"
+    }
+  },
+  {
+    "iPageID": 12,
+    "sTitle": "Polityka Prywatności",
+    "sSlug": "polityka-prywatnosci",
+    "sPageTemplate": "polityka-prywatnosci.html",
+    "sMainTemplate": "layout.html",
+    "aVariables": {
+      "sBannerBg": "media/background/kontakt.jpg",
+      "sMainImage": "media/garden/retro_ogrod_01.jpg"
+    }
+  }
+]

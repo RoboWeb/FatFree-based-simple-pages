@@ -1,0 +1,110 @@
+[
+  {
+    "contactForm": {
+      "general": {
+        "subject": "Kontakt ze strony",
+        "successStatement": {
+          "header": "Dziękujemy Twoja wiadomość już do nas dotarła",
+          "body": "Wypatruj gołębia pocztowego lub maila z odpowiedzią.<br/>Do usłyszenia!"
+        },
+        "notificationTime": 5
+      },
+      "fields": {
+        "name": {
+          "id": "name",
+          "type": "name",
+          "label": "imię i nazwisko",
+          "tabindex": 1,
+          "charsNumber": {
+            "min": 5,
+            "max": 120
+          },
+          "require": true,
+          "value": "",
+          "error": false,
+          "errStatements": {
+            "empty": "podaj imię i nazwisko",
+            "invalid": "podaj poprawne imię i nazwisko<br/>dozwolone znaki: A-Za-z0-9, myślnik i spacja<br/>min 5 znaków, max 120 znaków"
+          }
+        },
+        "phone": {
+          "id": "phone",
+          "type": "phone",
+          "label": "numer telefonu kontaktowego",
+          "tabindex": 3,
+          "charsNumber": {
+            "min": 7,
+            "max": 18
+          },
+          "require": true,
+          "value": "",
+          "error": false,
+          "errStatements": {
+            "empty": "podaj numer telefonu kontaktowego",
+            "invalid": "podaj poprawny numer telefonu<br/>dozwolone formaty:<br/>tel. stacjonarny: +XX (XX) XXXXXXX, 0XX XXXXXXX, XXXXXXX<br/>tel. komórkowy: +XX XXXXXXXXX, XXXXXXXXX"
+          }
+        },
+        "email": {
+          "id": "email",
+          "type": "email",
+          "label": "adres e-mail",
+          "tabindex": 2,
+          "charsNumber": {
+            "min": 6,
+            "max": 120
+          },
+          "require": true,
+          "value": "",
+          "error": false,
+          "errStatements": {
+            "empty": "podaj adres e-mail",
+            "invalid": "podaj prawidłowy adres e-mail<br/>max 120 znaków"
+          }
+        },
+        "message": {
+          "id": "message",
+          "type": "textarea",
+          "label": "twoja wiadomość",
+          "tabindex": 4,
+          "charsNumber": {
+            "min": 5,
+            "max": 300
+          },
+          "require": true,
+          "value": "",
+          "error": false,
+          "errStatements": {
+            "empty": "przekaż nam jakąś wiadomość :)",
+            "invalid": "przekaż nam jakąś wiadomość, ale nie taką...<br/>dozwolone znaki: A-Za-z0-9 '.', ',', '-', '_', spacja i nawiasy: '(', ')'<br/>min 5 znaków, max 300"
+          }
+        },
+        "agreement": {
+          "id": "agreement",
+          "type": "checkbox",
+          "label": "Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do komunikacji poprzez formularz kontaktowy (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. z 2002r. Nr 101, poz. 926 ze zm.).",
+          "tabindex": 5,
+          "require": true,
+          "value": "",
+          "error": false,
+          "valid": true,
+          "errStatements": {
+            "invalid": "Twoja zgoda jest niezbędna."
+          }
+        },
+        "accept": {
+          "id": "accept",
+          "type": "checkbox",
+          "label": "Akceptuję <a href=\"/polityka-prywatnosci\" target=\"_blank\">politykę prywatności</a> Restauracja & Hotel Retro B. A. Zientarski***.",
+          "tabindex": 6,
+          "require": true,
+          "value": "",
+          "error": false,
+          "valid": true,
+          "errStatements": {
+            "invalid": "Twoja akceptacja jest niezbędna."
+          }
+        }
+      }
+    }
+  }
+]

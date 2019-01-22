@@ -1,0 +1,18 @@
+<footer id="footer">
+  <div class="container">
+    <div class="row 200%">
+      <div class="4u 12u$(medium)">
+        {{ @MADEBY | raw }}
+        <div class="8u$ 12u$(medium) footer-menu">
+          <ul>
+            <repeat group="{{ @navigation[@menus.MAIN].aPositions }}" key="{{ @indx }}" value="{{ @pos }}">
+              <check if="{{ @indx > 0 }}">
+                <li><a href="{{ @pos.sUrl }}">{{ @pos.sText }}</a></li>
+              </check>
+            </repeat>
+            <li><a href="/polityka-prywatnosci">Polityka Prywatności</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

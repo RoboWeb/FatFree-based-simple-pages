@@ -1,0 +1,209 @@
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+	@include vendor('appearance', 'none');
+	@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
+	background-color: _palette(accent2, bg);
+	border-radius: _size(border-radius);
+	border: 0;
+	color: _palette(accent2, fg-bold) !important;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: _font(weight);
+	height: 3em;
+	line-height: 3em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+
+	&:hover {
+		background-color: lighten(_palette(accent2, bg), 5);
+	}
+
+	&:active {
+		background-color: darken(_palette(accent2, bg), 5);
+	}
+
+	&.icon {
+		padding-left: 1.35em;
+
+		&:before {
+			margin-right: 0.5em;
+		}
+	}
+
+	&.fit {
+		display: block;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		width: 100% !important;
+	}
+
+	&.small {
+		font-size: 0.8em;
+	}
+
+	&.big {
+		font-size: 1.35em;
+	}
+
+	&.alt {
+		background-color: rgba(38,40,45,0.5);
+		box-shadow: inset 0 0 0 (_size(border-width) * 3) _palette(bg);
+		color: _palette(bg) !important;
+		height: 3.3em;
+		line-height: 3.3em;
+
+		&:hover {
+			background-color: rgba(255,255,255,0.2);
+		}
+
+		&:active {
+			background-color: rgba(255,255,255,0.1);
+		}
+
+		&.icon {
+			&:before {
+				color: _palette(fg-light);
+			}
+		}
+
+		&.reverse {
+			background-color: rgba(255,255,255,0.5);
+			box-shadow: inset 0 0 0 (_size(border-width) * 3) _palette(fg);
+			color: _palette(fg-bold) !important;
+
+			&:hover {
+				background-color: rgba(0,0,0,0.2);
+			}
+
+			&:active {
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
+	}
+
+	&.special {
+		background-color: _palette(accent1, bg);
+		color: _palette(accent1, fg-bold) !important;
+
+		&:hover {
+			background-color: lighten(_palette(accent1, bg), 5);
+		}
+
+		&:active {
+			background-color: darken(_palette(accent1, bg), 5);
+		}
+	}
+
+	&.transparent {
+		background: transparent;
+		color: _palette(fg) !important;
+		letter-spacing: normal;
+		font-style: _font(style-italic);
+
+		&:hover {
+			color: lighten(_palette(fg), 15) !important;
+		}
+		&:active {
+			color: darken(_palette(fg), 15) !important;
+		}
+	}
+
+	&.price {
+		overflow: hidden;
+		position: relative;
+		background: _palette(accent2, border2);
+		color: white;
+		font-style: _font(style-italic);
+		font-weight: bold;
+		font-size: 2.5em;
+		height: 2em;
+		line-height: 0.7em;
+		letter-spacing: 1px;
+		margin-bottom: 0.5em;
+		-webkit-transition: border-color 0.3s, background-color 0.3s;
+		transition: border-color 0.3s, background-color 0.3s;
+		-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		p {
+			@include vertical-align();
+		}
+		span {
+			font-size: 23px;
+		}
+		&::after, > p {
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+			transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+			display: block;
+		}
+		&::after {
+			content: attr(data-text);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			color: white;
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+
+		&:hover {
+			background: lighten(_palette(fg), 15) !important;
+			> p {
+				opacity: 0;
+				-webkit-transform: translateY(-25%);
+				transform: translateY(-25%);
+			}
+			&::after {
+				opacity: 1;
+				top: 0;
+				-webkit-transform: translateY(28%);
+				transform: translateY(28%);
+			}
+		}
+		&:active {
+			background: darken(_palette(fg), 15) !important;
+		}
+	}
+
+	&.disabled,
+	&:disabled {
+		background-color: _palette(fg) !important;
+		box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+		color: _palette(bg) !important;
+		cursor: default;
+		opacity: 0.25;
+	}
+
+	@include breakpoint(xsmall) {
+		padding: 0 10px;
+	}
+}
+.image {
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		position: absolute;
+		top: 50%;
+		left: 10%;
+		right: 10%;
+		max-width: 160px;
+		margin: 0 auto;
+		transform: translateY(-50%);
+	}
+}

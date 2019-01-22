@@ -1,0 +1,12 @@
+<div class="container top-space">
+  <div class="row">
+
+    <repeat group="{{ @mPage.aVariables.aGalleries }}" value="{{ @gallery }}">
+    <div class="2u 4u(medium) 6u(small) 12u$(xsmall) align-center">
+      <a href="{{ @gallery.sPermalink }}" class="button fit alt reverse no-margins">{{ @gallery.sCategory }}</a>
+    </div>
+    </repeat>
+
+  </div>
+</div>
+<include href="_blocks/_gallery.html" with="gimg={{ @mPage.aVariables.sGallery }}" />

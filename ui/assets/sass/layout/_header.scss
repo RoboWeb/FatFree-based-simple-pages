@@ -1,0 +1,175 @@
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+/* Header */
+
+	body {
+		padding-top: 5.25em;
+
+		&.home {
+			padding-top: 0;
+
+			#header {
+				background: transparent;
+				color: white;
+				top: 6em;
+
+
+				.logo {
+					width: 205px;
+					height: 205px;
+					border-radius: 0;
+					background: transparent url('../../images/logo_retro_white-205x205B.png') no-repeat center center;
+					position:relative;
+					top:-2.4em;
+				}
+				@include breakpoint(medium) {
+					a {
+						padding: 0 0.4em;
+					}
+				}
+				@include breakpoint(small) {
+					background: _palette(bg);
+					color: darken(_palette(accent2, bg), 12);
+					a {
+						font-size: 1em;
+						&.logo {
+							width: 133px;
+							height: 133px;
+							border-radius: 50%;
+							background: white url('../../images/logo_retro_black-133x133.png') no-repeat center center;
+							&:hover {
+								color: transparent;
+							}
+						}
+					}
+
+				}
+				@include breakpoint(xsmall) {
+					top: 0;
+					#facebook {
+						position: absolute;
+						display: block;
+						width: 100%;
+					}
+					a {
+						display: block;
+						line-height: 3.1em;
+						&.logo {
+							position: absolute;
+							display: block;
+							top: 0;
+							left: 0;
+							right: 0;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+			@include breakpoint(xsmall){
+				padding-top: 30em;
+			}
+		}
+	}
+
+	#header {
+		background: _palette(bg);
+		color: darken(_palette(accent2, bg), 12);
+		cursor: default;
+		height: 5.25em;
+		left: 0;
+		line-height: 5.25em;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		z-index: _misc(z-index-base) + 1;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+		#facebook {
+			position: absolute;
+		}
+
+		a {
+			font-size: 1.21em;
+			@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+			display: inline-block;
+			padding: 0 0.75em;
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				color: _palette(accent1, fg);
+			}
+			&:last-child {
+				padding-right: 1.25em;
+			}
+			&.logo {
+				text-indent: -1000em;
+				display: inline-block;
+				height: inherit;
+				line-height: inherit;
+				margin: 0;
+				padding: 0;
+				width: 133px;
+				height: 133px;
+				border-radius: 50%;
+				background: white url('../../images/logo_retro_black-133x133.png') no-repeat center center;
+				&:hover {
+					color: transparent;
+				}
+			}
+			@include breakpoint(small) {
+				padding: 0 0.5em;
+
+				&:last-child {
+					padding-right: 1em;
+				}
+			}
+		}
+
+	}
+	@include breakpoint(large) {
+		#header {
+			a {
+				font-size: 1.2em;
+			}
+		}
+	}
+	@include breakpoint(medium) {
+		body {
+			padding-top: 44px;
+			#header {
+				a {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(xsmall) {
+		body {
+			padding-top: 30em;
+
+			#header {
+				min-width: 320px;
+				height: 30em;
+				padding-top: 133px;
+
+				a {
+					display: block;
+					line-height: 3.1em;
+					&.logo {
+						position: absolute;
+						display: block;
+						top: 0;
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+					}
+				}
+				a:last-child {
+					padding: 0 0.5em;
+				}
+			}
+		}
+	}

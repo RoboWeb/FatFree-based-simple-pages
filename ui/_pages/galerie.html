@@ -1,0 +1,12 @@
+<div id="main" class="container top-space">
+  <div class="row gallery">
+    <repeat group="{{ @mPage.aVariables.aGalleries }}" key="{{ @indx }}" value="{{ @gallery }}">
+      <div class="{{ $indx % 3 === 2 ? '4u$' : '4u' }} {{ $indx % 2 === 1 ? '6u$(medium)' : '6u(medium)' }} 12u$(small) align-center">
+        <div class="image fit">
+          <img src="{{ @gallery.sMainImage }}" />
+          <a href="{{ @gallery.sPermalink }}" class="button alt">{{ @gallery.sCategory }}</a>
+        </div>
+      </div>
+    </repeat>
+  </div>
+</div>

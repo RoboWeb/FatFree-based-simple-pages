@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!-- skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed -->
+<html>
+<head>
+	<include href="_blocks/_head.html"/>
+</head>
+<body id="top" class="home">
+
+	<!-- Header -->
+	<include href="_blocks/_header.html" with="menu={{ @navigation[@menus.MAIN].aPositions }}" />
+
+	<!-- Banner -->
+	<section class="slider expand" id="homeSlider">
+
+	<repeat group="{{ @mPage.aVariables.aSlides }}" key="{{ @indx }}" value="{{ @slide }}">
+		<div id="{{ 'slide-'.@indx }}" class="slide {{ @indx === 0 ? 'active' : '' }}" style="background: url('{{ @slide.sBackground }}') no-repeat center 25%; background-size: cover;">
+			<div class="container">
+				<div class="row">
+					<div class="-3u 6u -1u(medium) 10u$(medium) slide-content">
+						<h2 class="slide-title">{{ @slide.sTitle }}</h2>
+						<p class="slide-intro">{{ @slide.sIntro }}</p>
+						<ul class="actions slide-actions">
+							<li><a href="{{ @BASE }}/{{ @slide.sUrl }}" class="button alt">więcej</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</repeat>
+	<!-- controls -->
+	<check if="{{ @indx > 0 }}">
+	<a class="left slider-control" href="#homeSlider" role="button" v-on:click.stop.prevent="prevSlide">
+		<i class="icon-retro-to-left" ></i>
+	</a>
+	<a class="right slider-control" href="#homeSlider" role="button" v-on:click.stop.prevent="nextSlide">
+		<i class="icon-retro-to-right" ></i>
+	</a>
+	<!-- slides indicators -->
+	<ul class="slider-indicators">
+		<repeat group="{{ @mPage.aVariables.aSlides }}" key="{{ @indx }}" value="{{ @slide }}">
+		<li class="indicator" >
+			<a href="#" v-on:click.stop.prevent="setActiveSlide({{ @indx }})" >
+				<i class="{{ @indx === 0 ? 'fa fa-circle' : 'fa fa-circle-o' }}" v-bind:class="{'fa-circle': activeSlideIndx === {{ @indx }}, 'fa-circle-o': activeSlideIndx !== {{ @indx }} }"></i>
+			</a>
+		</li>
+		</repeat>
+	</ul>
+</check>
+
+
+</section>
+<!-- Main -->
+<div id="main" class="container align-center top-space">
+	<!-- Intro -->
+	<div class="row">
+		<section class="6u -3u 12u$(medium)">
+			<h2>Witamy!</h2>
+			<hr class="short" />
+			<p>Hotel Retro to wyjątkowe miejsce w samym centrum Zielonej Góry. Domowa kuchnia,
+				komfortowe pokoje oraz urokliwy ogród sprawiają, że nasi goście mogą odpocząć po
+				wyczerpującej podróży i nabrać sił witalnych. Hotel jest w pełni przystosowany
+				do potrzeb osób niepełnosprawnych oraz rodzin z małymi dziećmi. Serdecznie zapraszamy!</p>
+				<a class='button transparent' href='o-nas'>przeczytaj historię</a>
+			</section>
+
+		</div>
+
+		<hr class="major short" />
+
+		<div class="row gallery">
+			<repeat group="@mPage.aVariables.aRandomRooms" key="{{ @indx }}" value="{{ @room }}">
+				<div class="{{ $indx < 2 ? '4u' : '4u$' }} 12u$(small)">
+					<h4>{{ @room.sName }}</h4>
+					<div class="image fit">
+						<img src="{{ @room.sGallery }}{{ @room.sMainImage }}" />
+						<a href="{{ @room.sPermalink }}" class="button alt">zobacz pokój</a>
+					</div>
+					<p>{{ @room.aDescription.sShort }}</p>
+				</div>
+			</repeat>
+		</div>
+	</div>
+	<!-- Restauracja -->
+	<section class="banner" id="banner-restauracja" style="background: rgba(0,0,0,0.6) url('media/restauracja-1-bg.jpg') no-repeat center 25%; background-size: cover;">
+		<div class="container">
+			<div class="row">
+				<div class="-3u 6u -1u(medium) 10u$(medium) 12u$(small)">
+					<h2>Restauracja</h2>
+					<p>Poznaj nasze bogate menu. Oferujemy dania mięsne, wegetariańskie oraz zestawy śniadaniowe.</p>
+					<ul class="actions">
+						<li><a href="restauracja" class="button alt">więcej</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact section -->
+	<include href="_blocks/_contact.html" />
+
+	<!-- Footer -->
+	<include href="_blocks/_footer.html" />
+
+	<!-- Scripts -->
+	<repeat group="{{ @scripts }}" value="{{ @script }}">
+		<script src="{{ @script | raw }}" type="text/javascript"></script>
+	</repeat>
+
+	<!-- upperbooking -->
+	<script src="http://wis.upperbooking.com/hotelretrobazientarski/booking?locale=pl" async></script>
+</body>
+</html>

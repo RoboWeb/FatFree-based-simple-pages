@@ -1,0 +1,44 @@
+[
+  {
+    "sCategory": "Pokoje",
+    "sSlug": "pokoje",
+    "sPermalink": "galeria/pokoje",
+    "sMainImage": "media/rooms/4/pokoj 3 osobowy 1.JPG",
+    "sGalleryDir": "media/rooms/"
+  },
+  {
+    "sCategory": "Ogród",
+    "sSlug": "ogrod",
+    "sPermalink": "galeria/ogrod",
+    "sMainImage": "media/garden/retro_ogrod_01.jpg",
+    "sGalleryDir": "media/garden/"
+  },
+  {
+    "sCategory": "Historia",
+    "sSlug": "historia",
+    "sPermalink": "galeria/historia",
+    "sMainImage": "media/history/retro_historia_1.jpg",
+    "sGalleryDir": "media/history/"
+  },
+  {
+    "sCategory": "Restauracja",
+    "sSlug": "restauracja",
+    "sPermalink": "galeria/restauracja",
+    "sMainImage": "media/restaurant/dania-glowne.jpg",
+    "sGalleryDir": "media/restaurant/"
+  },
+  {
+    "sCategory": "Sala",
+    "sSlug": "sala",
+    "sPermalink": "galeria/sala",
+    "sMainImage": "media/hall/retro_sala_1.jpg",
+    "sGalleryDir": "media/hall/"
+  },
+  {
+    "sCategory": "Hotel",
+    "sSlug": "hotel",
+    "sPermalink": "galeria/hotel",
+    "sMainImage": "media/city/retro_miasto_1.jpg",
+    "sGalleryDir": "media/city/"
+  }
+]

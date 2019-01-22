@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!-- skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed -->
+<html>
+<head>
+	<include href="_blocks/_head.html"/>
+</head>
+<body id="top">
+
+	<!-- Header -->
+	<include href="_blocks/_header.html" with="menu={{ @navigation[@menus.MAIN].aPositions }}" />
+
+	<!-- Banner -->
+	<section class="banner" id="banner" style="background: url('{{ @mPage.aVariables.sBannerBg }}') no-repeat center 25%; background-size: cover;">
+		<div class="container">
+			<div class="row">
+				<div class="12u$">
+				<h2>{{ @mPage.sTitle }}</h2>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Main -->
+	<include href="{{ '_pages/'. @mPage.sPageTemplate }}" />
+
+	<!-- Contact -->
+	<div class="container">
+		<div class="row">
+			<div class="12u$"><hr class="major short" /></div>
+			<div class="12u$ align-center">
+				<p>Nasza recepcja jest czynna 24h na dobę.<br/>We speak English. Wir sprechen Deutsch.</p>
+			</div>
+			<div class="6u 12u$(small)">
+				<include href="_blocks/_contact_data.html" />
+			</div>
+			<div class="6u$ 12u$(small)">
+				<include href="_blocks/_contact_form.html" />
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<include href="_blocks/_footer.html" />
+
+	<!-- Scripts -->
+	<repeat group="{{ @scripts }}" value="{{ @script }}">
+		<script src="{{ @script | raw }}" type="text/javascript"></script>
+	</repeat>
+
+	<!-- upperbooking -->
+	<script src="http://wis.upperbooking.com/hotelretrobazientarski/booking-sub?locale=pl" async></script>
+
+	</body>
+	</html>

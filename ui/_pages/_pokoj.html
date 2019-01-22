@@ -1,0 +1,60 @@
+<set dt="{{ time() }}" />
+<set pr="{{ @mPage.aVariables.aPrices }}" />
+<set pr_sp="{{ @dt >= strtotime(@pr.aSpecial.tStartTime) && @dt <= strtotime(@pr.aSpecial.tEndTime) }}" />
+
+<include href="_blocks/_gallery.html" with="gimg={{ @mPage.aVariables.sGallery }}" />
+
+  <div id="main" class="container top-space">
+    <div class="row">
+      <div class="12u$"><p>&nbsp;</p></div>
+      <div class="8u 12u$(small) align-left">
+        <h3>Informacje</h3>
+        <hr class="short"/>
+        {{  @mPage.aVariables.aDescription.hFull | raw }}
+        <p>
+          W hotelu działa winda oraz restauracja z ogrodem. Recepcja jest otwarta 24h. Na
+          życzenie udostępniamy żelazko, deskę do prasowania oraz opcję
+          budzenia. Cena za dobę obejmuje również śniadanie w formie bufetu.
+        </p>
+        <p>
+          Tuż przy hotelu znajduje się parking miejski oraz prywatny płatny parking strzeżony (nie należący do hotelu).
+          Istnieje jednak możliwość rezerwacji miejsca na parkingu za pośrednictwem hotelu.
+        </p>
+        <h3>Ciekawe miejsca do zobaczenia w Zielonej Górze i okolicy:</h3>
+        <hr class="short"/>
+        <ul class="alt">
+          <li>Centrum miasta: 1 km</li>
+          <li>Centrum Przyrodnicze: 1,2 km</li>
+          <li>Palmiarnia: 1,3 km</li>
+          <li>Centrum Rekreacyjno­Sportowe (CRS): 2 km</li>
+          <li>Centrum Nauki Keplera Planetarium Wenus: 2,8 km</li>
+          <li>Stadion Żużlowy: 3 km</li>
+          <li>Ogród Botaniczny: 3,7 km</li>
+          <li>Aeroklub Zielona Góra Przylep (lotnisko): 5,9 km</li>
+          <li>Muzeum Etnograficzne w Zielonej Górze (Skansen w Ochli): 7,6 km</li>
+          <li>WOSiR Drzonków: 7,9 km</li>
+          <li>Lubuskie Muzeum Wojskowe w Drzonowie: 12,5 km</li>
+          <li>okoliczne winnice: ok. 15 km</li>
+        </ul>
+      </div>
+      <div class="4u 12u$(small)">
+        <div class="box alt align-center">
+          <h3>Wyposażenie pokoju</h3>
+          <hr class="short"/>
+          <ul class="icons">
+            <repeat group="{{ @mPage.aVariables.aIcons }}" value="{{ @ico }}" >
+              <li><i class="{{ @ico }}"></i></li>
+            </repeat>
+          </ul>
+          <h3>Na życzenie gości</h3>
+          <hr class="short"/>
+          <p>żelazko, deska do prasowania, budzenie</p>
+          <h3>Cena</h3>
+          <a href="{{ @BASE }}/kontakt#footer" class="button fit price" data-text="Zarezerwuj!">
+            <p>{{ @pr_sp ? @pr.aSpecial.sPrice : @pr.aNormal.sPrice }} <span>zł/doba{{ @pr_sp ? (@pr.aSpecial.sNote ? '<br/>'.@pr.aSpecial.sNote : '') : (@pr.aNormal.sNote ? '<br/>'.@pr.aNormal.sNote : '') }}</span></p>
+          </a>
+          <h3><strong>zapraszamy do rezerwacji:</strong><br/><strong>{{ @contact.PHONE.recepcja }}</strong></h3>
+        </div>
+      </div>
+    </div>
+  </div>

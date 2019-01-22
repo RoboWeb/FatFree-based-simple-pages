@@ -1,0 +1,138 @@
+[
+  {
+    "sName": "Pokój 1-osobowy",
+    "sSlug": "pokoj-1-osobowy",
+    "sPermalink": "pokoje/pokoj-1-osobowy",
+    "aPrices": {
+      "aNormal": {
+        "sPrice": 220
+      },
+      "aSpecial": {
+        "sPrice": 280,
+        "tStartTime": "03.09.2016",
+        "tEndTime": "11.09.2016"
+      }
+    },
+    "aDescription": {
+      "sShort": "Idealna propozycja dla osób przybywających do Zielonej Góry w delegacjach lub oczekujących na przesiadkę.",
+      "hFull" : "<p>Idealna propozycja dla osób przybywających do Zielonej Góry w delegacjach lub oczekujących na przesiadkę. Pokój został wyposażony w telewizor LCD, klimatyzację, szafę, stolik oraz miejsce do pracy. Miękki materac zapewni udany wypoczynek, a szybka sieć wi­fi nieograniczony dostęp do internetu. W pokoju znajduje się łazienka wyłożona kamieniem naturalnym (marmur lub trawertyn) wraz z ręcznikami i suszarką do włosów.</p>"
+    },
+    "aIcons": ["icon-retro-wifi", "icon-retro-elevator", "icon-retro-shower", "icon-retro-air-cond", "icon-retro-dryer", "icon-retro-breakfast", "icon-retro-tv"],
+    "sMainImage": "media/pokoj_1os.JPG",
+    "sGalleryDir": "media/rooms/1/"
+  },
+  {
+    "sName": "Pokój 2-osobowy standard",
+    "sSlug": "pokoj-2-osobowy-standard",
+    "sPermalink": "pokoje/pokoj-2-osobowy-standard",
+    "aPrices": {
+      "aNormal": {
+        "sPrice": 260,
+        "sNote": "(1 osoba 250 zł)"
+      },
+      "aSpecial": {
+        "sPrice": 300,
+        "sNote" : "(1 osoba 300 zł)",
+        "tStartTime": "03.09.2016",
+        "tEndTime": "11.09.2016"
+      }
+    },
+    "aDescription": {
+      "sShort": "Miejsce wypoczynku dla dwóch osób. W pokoju znajdują się oddzielne łóżka z wygodnymi materacami, które można zsunąć na życzenie gości.",
+      "hFull" : "<p>Miejsce wypoczynku dla dwóch osób. W pokoju znajdują się oddzielne łóżka z wygodnymi materacami, które można zsunąć na życzenie gości. Do dyspozycji odwiedzających jest telewizor LCD, klimatyzacja, łazienka wyłożona kamieniem naturalnym (marmur lub trawertyn) z ręcznikami i suszarką do włosów. Szybka sieć wi­fi oferująca nieograniczony dostęp do internetu. Szafa pomieści nawet największe bagaże.</p>"
+    },
+    "aIcons": ["icon-retro-wifi", "icon-retro-elevator", "icon-retro-shower", "icon-retro-dryer", "icon-retro-air-cond", "icon-retro-breakfast", "icon-retro-tv"],
+    "sMainImage": "media/pokoj_2os_stand.JPG",
+    "sGalleryDir": "media/rooms/2/"
+  },
+  {
+    "sName": "Pokój 2-osobowy comfort",
+    "sSlug": "pokoj-2-osobowy-comfort",
+    "sPermalink": "pokoje/pokoj-2-osobowy-comfort",
+    "aPrices": {
+      "aNormal": {
+        "sPrice": 300,
+        "sNote": "(1 osoba 270 zł)"
+      },
+      "aSpecial": {
+        "sPrice": 350,
+        "sNote": "(1 osoba 320 zł)",
+        "tStartTime": "03.09.2016",
+        "tEndTime": "11.09.2016"
+      }
+    },
+    "aDescription": {
+      "sShort": "Najlepsza opcja dla par, które cenią sobie dobry wystrój i wygodę.",
+      "hFull" : "<p>Najlepsza opcja dla par, które cenią sobie dobry wystrój i wygodę. W razie potrzeby łóżko można rozdzielić na dwa osobne. Goście mogą skorzystać z przestronnej marmurowej łazienki z prysznicem, ręcznikami oraz suszarką do włosów. Telewizora LCD oraz nieograniczonego dostępu do internetu dzięki sieci wi­fi. W upalne dni z pomocą przyjdzie klimatyzacja, w którą zostały wyposażone wszystkie oferowane pokoje. Bagaże można wypakować do ogromnej szafy z wieszakami.</p>"
+    },
+    "aIcons": ["icon-retro-wifi", "icon-retro-elevator", "icon-retro-shower", "icon-retro-dryer", "icon-retro-air-cond", "icon-retro-breakfast", "icon-retro-tv"],
+    "sMainImage": "media/pokoj_2os_comfort.JPG",
+    "sGalleryDir": "media/rooms/3/"
+  },
+  {
+    "sName": "Pokój 3-osobowy",
+    "sSlug": "pokoj-3-osobowy",
+    "sPermalink": "pokoje/pokoj-3-osobowy",
+    "aPrices": {
+      "aNormal": {
+        "sPrice": 350
+      },
+      "aSpecial": {
+        "sPrice": 400,
+        "tStartTime": "03.09.2016",
+        "tEndTime": "11.09.2016"
+      }
+    },
+    "aDescription": {
+      "sShort": "Podróżujecie w trójkę lub macie małe dziecko? Ten przestronny pokój będzie idealny!",
+      "hFull" : "<p>Podróżujecie w trójkę lub macie małe dziecko? Ten przestronny pokój będzie idealny! Został wyposażony w dużą łazienkę wyłożoną kamieniem naturalnym, ręcznikami i suszarką do włosów, telewizor LCD, miejsce do pracy, ogromną szafę, szybki dostęp do internetu dzięki sieci wi­fi oraz w klimatyzację. Na życzenie gości można zsunąć łóżka, np. w łóżko małżeńskie lub przygotować dostawkę dla czwartej osoby w cenie 80 zł.</p>"
+    },
+    "aIcons": ["icon-retro-wifi", "icon-retro-elevator", "icon-retro-shower", "icon-retro-dryer", "icon-retro-air-cond", "icon-retro-breakfast", "icon-retro-tv"],
+    "sMainImage": "media/pokoj_3os.JPG",
+    "sGalleryDir": "media/rooms/4/"
+  },
+  {
+    "sName": "Apartament 3-osobowy z aneksem kuchennym",
+    "sSlug": "apartament-3-osobowy-z-aneksem",
+    "sPermalink": "pokoje/apartament-3-osobowy-z-aneksem",
+    "aPrices": {
+      "aNormal": {
+        "sPrice": 390
+      },
+      "aSpecial": {
+        "sPrice": 450,
+        "tStartTime": "03.09.2016",
+        "tEndTime": "11.09.2016"
+      }
+    },
+    "aDescription": {
+      "sShort": "Każda rodzina z dziećmi doceni zalety tego apartamentu. Na przestrzeni 56 m2 znajduje się aneks kuchenny umożliwiający szybkie przygotowania posiłków.",
+      "hFull" : "<p>Każda rodzina z dziećmi doceni zalety tego apartamentu. Na przestrzeni 56 m2 znajduje się aneks kuchenny umożliwiający szybkie przygotowania posiłków, które można spożyć przy stole z czterema krzesłami oraz przestronna łazienka wraz z ręcznikami i suszarką do włosów. Do dyspozycji gości znajduje się telewizor LCD, nieograniczony dostęp do internetu dzięki sieci wi­fi, klimatyzacja oraz ogromna, pojemna szafa. Apartament posiada osobne wejście.</p>"
+    },
+    "aIcons": ["icon-retro-wifi", "icon-retro-elevator", "icon-retro-shower", "icon-retro-dryer", "icon-retro-air-cond", "icon-retro-breakfast", "icon-retro-tv", "icon-retro-locker"],
+    "sMainImage": "media/apartament_3os.JPG",
+    "sGalleryDir": "media/rooms/5/"
+  },
+  {
+    "sName": "Apartament 4-osobowy",
+    "sSlug": "apartament-4-osobowy",
+    "sPermalink": "pokoje/apartament-4-osobowy",
+    "aPrices": {
+      "aNormal": {
+        "sPrice": 480
+      },
+      "aSpecial": {
+        "sPrice": 550,
+        "tStartTime": "03.09.2016",
+        "tEndTime": "11.09.2016"
+      }
+    },
+    "aDescription": {
+      "sShort": "Propozycja dla czterech osób lub rodziny z dziećmi.",
+      "hFull" : "<p>Propozycja dla czterech osób lub rodziny z dziećmi. Apartament o wielkości 55m2 składa się z dwóch pomieszczeń (po dwa łóżka w każdym) oraz przestronnej łazienki z prysznicem i dwiema umywalkami. Do dyspozycji gości przygotowaliśmy świeże ręczniki, telewizor LCD o średnicy 47 cali oraz nieograniczony dostęp do internetu dzięki sieci wi­fi. Apartament jest w pełni przystosowany do potrzeb osób niepełnosprawnych.</p>"
+    },
+    "aIcons": ["icon-retro-wifi", "icon-retro-elevator", "icon-retro-shower", "icon-retro-dryer", "icon-retro-air-cond", "icon-retro-breakfast", "icon-retro-tv"],
+    "sMainImage": "media/apartament_4os.JPG",
+    "sGalleryDir": "media/rooms/6/"
+  }
+]

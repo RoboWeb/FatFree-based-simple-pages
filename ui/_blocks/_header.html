@@ -1,0 +1,13 @@
+<header id="header">
+
+<repeat group="{{ @menu }}" key="{{ @indx }}" value="{{ @pos }}">
+   <check if="{{ @indx > 0 }}">
+      <a href="{{ @BASE }}/{{ @pos.sUrl }}">{{ @pos.sText }}</a>
+      <check if="{{ @indx === 3 }}">
+         <a class="logo" href="{{ @BASE }}/">{{ @menu[0].sText }}</a>
+      </check>
+   </check>
+</repeat>
+<a id="facebook" href="https://www.facebook.com/RetroZG" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+</header>

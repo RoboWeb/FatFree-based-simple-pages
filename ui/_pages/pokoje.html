@@ -1,0 +1,13 @@
+<div id="main" class="container top-space">
+  <div class="row gallery">
+    <repeat group="{{ @mPage.aVariables.aRooms }}" key="{{ @indx }}" value="{{ @room }}">
+      <div class="{{ $indx % 3 === 2 ? '4u$' : '4u' }} {{ $indx % 2 === 1 ? '6u$(medium)' : '6u(medium)' }} 12u$(small) align-center">
+        <h4>{{ @room.sName }}</h4>
+        <div class="image fit">
+          <img src="{{ @room.sMainImage }}" />
+          <a href="{{ @room.sPermalink }}" class="button alt">zobacz pokój</a>
+        </div>
+      </div>
+    </repeat>
+  </div>
+</div>

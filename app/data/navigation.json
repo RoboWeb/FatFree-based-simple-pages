@@ -1,0 +1,63 @@
+[
+    {
+        "iID": 1,
+        "sName": "main",
+        "sLabel": "Menu g\u0142\u00f3wne",
+        "aPositions": [
+            {
+                "sTagId": "homeItm",
+                "sUrl": " ",
+                "sText": "Strona Główna",
+                "sTagClass": ""
+            },
+            {
+                "sTagId": "onasItm",
+                "sUrl": "o-nas",
+                "sText": "O nas",
+                "sTagClass": ""
+            },
+            {
+                "sTagId": "pokojeItm",
+                "sUrl": "pokoje",
+                "sText": "Pokoje",
+                "sTagClass": ""
+            },
+            {
+                "sTagId": "restauracjaItm",
+                "sUrl": "restauracja",
+                "sText": "Restauracja",
+                "sTagClass": ""
+            },
+            {
+                "sTagId": "ogrodItm",
+                "sUrl": "ogrod",
+                "sText": "Ogród",
+                "sTagClass": ""
+            },
+            {
+                "sTagId": "galeriaItm",
+                "sUrl": "galeria",
+                "sText": "Galeria",
+                "sTagClass": ""
+            },
+            {
+                "sTagId": "kontaktItm",
+                "sUrl": "kontakt",
+                "sText": "Kontakt",
+                "sTagClass": ""
+            }
+        ]
+    },
+    {
+        "iID": 2,
+        "sName": "hidden",
+        "sLabel": "Menu ukryte",
+        "aPositions": [
+            {
+                "sUrl": "fly\/login",
+                "sText": "Logowanie",
+                "sTagClass": "icon fa-user"
+            }
+        ]
+    }
+]

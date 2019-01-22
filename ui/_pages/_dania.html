@@ -1,0 +1,24 @@
+<div id="main" class="container top-space">
+  <div class="row">
+    <div class="-4u 4u$ -2u(medium) 8u$(medium) 12u$(small) align-center">
+      <ul class="dishes-list">
+        <repeat group="{{ @mPage.aVariables.aDishesList }}" value="{{ @dish }}">
+          <li>
+            <header>
+              <h3>{{ @dish.sName }} <check if="{{ @dish.sWeigh }}"><span>{{ '('.@dish.sWeigh.')' }}</span></check></h3>
+              <p>{{ @dish.sDescription | raw}}</p>
+            </header>
+            <p class="price">{{ @dish.sPrice }}</p>
+            <check if="{{ @dish.sAvailability }}"><p>{{ @dish.sAvailability | raw }}</p></check>
+          </li>
+        </repeat>
+      </ul>
+    </div>
+    <div class="2u 6u(small) align-left">
+      <a class="button" href="{{ @mPage.aVariables.sPrevItemUrl }}" title="Poprzedni zestaw dań">Poprzedni</a>
+    </div>
+    <div class="2u -8u 6u$(small) align-right">
+      <a class="button" href="{{ @mPage.aVariables.sNextItemUrl }}" title="Następny zestaw dań">Następny</a>
+    </div>
+  </div>
+</div>

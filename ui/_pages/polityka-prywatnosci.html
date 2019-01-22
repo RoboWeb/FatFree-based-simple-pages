@@ -1,0 +1,28 @@
+<div id="main" class="container top-space">
+  <div class="row">
+    <div class="6u 12u$(small) align-left">
+      <h3>{{ @mPage.sTitle }}</h3>
+      <hr class="short"/>
+      <p>Dbamy o bezpieczeństwo Twoich danych. O tym jak jest to dla nas ważne świadczy m.in. fakt, że wdrożyliśmy środki organizacyjne i techniczne zgodne z przepisami dotyczącymi ochrony danych osobowych, w szczególności ustawy z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz.U.2002.101.926 j.t. z późn. zm.) oraz aktami wykonawczymi do tejże ustawy.</p>
+      <ol>
+        <li>
+          Administratorem Twoich danych osobowych jest:<br/>
+          <strong>{{ @contact.FULLNAME }}</strong><br/>
+          {{ @contact.ADDRESS.STREET }}<br/>
+          {{ @contact.ADDRESS.POSTCODE }} {{ @contact.ADDRESS.CITY }}, {{ @contact.ADDRESS.COUNTRY }}</br>
+          NIP: {{ @contact.NIP }}
+        </li>
+        <li>Nie sprzedajemy ani nie udostępniamy nikomu Twoich danych.</li>
+        <li>Nie przetwarzamy danych osobowych innych niż te, na które wyrazisz zgodę i tylko w takim celu przetwarzania jaki potwierdzisz wyrażając zgodę. Przysługuje Ci prawo dostępu do swoich danych, ich poprawienia lub usunięcia.</li>
+        <li>Korzystamy z technologii przechowującej i uzyskującej dostęp do informacji na komputerze bądź innym urządzeniu końcowym Użytkownika podłączonym do sieci Internet. Wykorzystujemy pliki cookies. Pliki cookies to niewielkie informacje tekstowe o sposobie korzystania z naszej strony, które przechowywane są po stronie Użytkownika.</li>
+        <li>Każdy Użytkownik może poprzez modyfikację ustawień swojej przeglądarki internetowej uniemożliwić zapisywanie plików cookies na swoim urządzeniu bądź zapisane pliki trwale usunąć. Użytkownik decyduje o przetwarzaniu plików cookies poprzez ustawienia swojej przeglądarki internetowej.</li>
+        <li>Niniejszy dokument obowiązuje od dnia 1 stycznia 2017 r. Zastrzegamy sobie prawo do wprowadzania zmian w Polityce Prywatności.</li>
+      </ol>
+    </div>
+    <div class="6u$ 12u$(small)">
+      <span class="image fit">
+        <img src="{{ @mPage.aVariables.sMainImage }}" alt="{{ @mPage.sTitle }}" />
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,625 @@
+[
+  {
+    "sCategory": "Śniadania",
+    "sSlug": "sniadania",
+    "sCategoryBg": "media/restaurant/sniadania.jpg",
+    "sBannerBg": "media/background/restauracja/sniadania.jpg",
+    "sPermalink": "restauracja/sniadania",
+    "aDishesList": [
+      {
+        "sName" :"Śniadania",
+        "sDescription": "w formie bufetu szwedzkiego",
+        "sPrice": "28.00 zł",
+        "sAvailability" : "Od poniedziałku do piątku: 7:00 - 10:00.<br/>W soboty i niedziele: 8:00 - 10:00"
+      }
+    ]
+  },
+  {
+    "sCategory": "Zupy",
+    "sSlug": "zupy",
+    "sCategoryBg": "media/restaurant/zupy.jpg",
+    "sBannerBg": "media/background/restauracja/zupy.jpg",
+    "sPermalink": "restauracja/zupy",
+    "aDishesList": [
+      {
+        "sName" :"Zupa dnia",
+        "sPrice": "8.00 zł"
+      },
+      {
+        "sName" :"Barszcz z kołdunami",
+        "sPrice": "15.00 zł"
+      },
+      {
+        "sName" :"Flaczki wołowe",
+        "sDescription": "z pieczywem",
+        "sPrice": "15.00 zł"
+      },
+      {
+        "sName" :"Żurek z jajkiem",
+        "sPrice": "12.00 zł"
+      },
+      {
+        "sName" :"Krem z pomidorów",
+        "sDescription": "z mozarellą i bazylią",
+        "sPrice": "11.00 zł"
+      },
+      {
+        "sName" :"Rosół",
+        "sDescription": "domowy rosół z kury lub kaczki, makaron własnej roboty",
+        "sPrice": "14.00 zł",
+        "sAvailability" : "zawsze w niedzielę"
+      },
+      {
+        "sName": "ZUPY SEZONOWE",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName": "chłodnik litewski",
+        "sPrice": "10.00 zł"
+      },
+      {
+        "sName": "gazpacho",
+        "sDescription": "(chłodnik hiszpański)",
+        "sPrice": "10.00 zł"
+      },
+      {
+        "sName": "krem z dyni",
+        "sPrice": "10.00 zł"
+      }
+    ]
+  },
+  {
+    "sCategory": "Przystawki",
+    "sSlug": "przystawki",
+    "sCategoryBg": "media/restaurant/przystawki.jpg",
+    "sBannerBg": "media/background/restauracja/przystawki.jpg",
+    "sPermalink": "restauracja/przystawki",
+    "aDishesList": [
+      {
+        "sName" :"Tatar wołowy",
+        "sDescription": "pieczywo",
+        "sPrice": "20.00 zł",
+        "sWeigh": "0,200 kg"
+      },
+      {
+        "sName" :"Tatar z łososia",
+        "sDescription": "pieczywo lub tosty",
+        "sPrice": "21.00 zł"
+      },
+      {
+        "sName" :"Pieczony camembert",
+        "sDescription": "z żurawiną, rukolą, pieczywo",
+        "sPrice": "15.50 zł"
+      },
+      {
+        "sName" :"Deska z prosciutto",
+        "sDescription": "oliwki, ser, bagietka",
+        "sPrice": "38.00 zł"
+      },
+      {
+        "sName" :"Tosty",
+        "sDescription": "z serem pleśniowym, gruszką w miodzie i orzechami włoskimi, rukola",
+        "sPrice": "15.00 zł"
+      }
+    ]
+  },
+  {
+    "sCategory": "Dania główne",
+    "sSlug": "dania-glowne",
+    "sCategoryBg": "media/restaurant/dania-glowne.jpg",
+    "sBannerBg": "media/background/restauracja/dania.jpg",
+    "sPermalink": "restauracja/dania-glowne",
+    "aDishesList": [
+      {
+        "sName" :"zestaw dnia",
+        "sDescription": "(zupa i drugie danie)",
+        "sPrice": "20.00 zł",
+        "sAvailability" : "Od poniedziałku do piątku, od godz. 12:00 do wyczerpania"
+      },
+      {
+        "sName" :"Zestaw niedzielny",
+        "sPrice": "32.00 zł",
+        "sAvailability" : "W niedzielę, od godz. 12:00 do wyczerpania"
+      },
+      {
+        "sName" :"stek z polędwicy wołowej",
+        "sDescription": "z sosem błękitnym, pieczone ziemniaki, mix sałat",
+        "sPrice": "65.00 zł",
+        "sWeigh": "0,200 kg"
+      },
+      {
+        "sName" :"stek z polędwicy wołowej",
+        "sDescription": "na pure z batatów, grillowane warzywa",
+        "sPrice": "60.00 zł",
+        "sWeigh": "0,200 kg"
+      },
+      {
+        "sName" :"stek z rostbefu wołowego",
+        "sDescription": "pieczone ziemniaki, mix sałat",
+        "sPrice": "42.00 zł",
+        "sWeigh": "0,200 kg"
+      },
+      {
+        "sName" :"polędwiczki wieprzowe",
+        "sDescription": "w sosie kurkowym na plackach ziemniaczanych",
+        "sPrice": "38.00 zł"
+      },
+      {
+        "sName" :"golonka z pieca",
+        "sDescription": "pieczone ziemniaczki, kapusta zasmażana",
+        "sPrice": "36.00 zł"
+      },
+      {
+        "sName" :"schab po amerykańsku",
+        "sDescription": "frytki, lub pieczone ziemniaki, surówka",
+        "sPrice": "28.00 zł"
+      },
+      {
+        "sName" :"pieczone udko z kaczki",
+        "sDescription": "ziemniaki, czerwona kapusta",
+        "sPrice": "36.00 zł"
+      },
+      {
+        "sName" :"filet z łososia",
+        "sDescription": "w delikatnym sosie z mascarpone na ryżu, parmezan",
+        "sPrice": "35.00 zł"
+      },
+      {
+        "sName" :"pstrąg z pieca",
+        "sDescription": "z masłem i zieloną pietruszką, frytkami/pieczonymi ziemniakami i surówką",
+        "sPrice": "35.00 zł"
+      },
+      {
+        "sName": "halibut z pieca",
+        "sDescription": "z owocami morza",
+        "sPrice": "52.00 zł"
+      },
+      {
+        "sName" :"placek po węgiersku",
+        "sPrice": "29.00 zł"
+      },
+      {
+        "sName" :"placuszki z kurczaka",
+        "sDescription": "z sosem czosnkowym",
+        "sPrice": "22.00 zł"
+      },
+      {
+        "sName" :"placki ziemniaczane",
+        "sDescription": "ze śmietaną lub cukrem 5 szt",
+        "sPrice": "18.00 zł"
+      },
+      {
+        "sName" :"pierogi ruskie",
+        "sPrice": "14.00 zł"
+      },
+      {
+        "sName" :"pierogi z mięsem",
+        "sPrice": "15.00 zł"
+      },
+      {
+        "sName" :"WSPOMNIENIE LATA",
+        "sDescription": "krewetki Black Tiger (5 szt) na maśle czosnkowym z papryką chilli, ziołami i pieczarkami, bagietka  ",
+        "sPrice": "70.00 zł"
+      }
+    ]
+  },
+  {
+    "sCategory": "Sałaty",
+    "sSlug": "salaty",
+    "sCategoryBg": "media/restaurant/salatki.jpg",
+    "sBannerBg": "media/background/restauracja/salatki.jpg",
+    "sPermalink": "restauracja/salaty",
+    "aDishesList": [
+      {
+        "sName" :"sałata z kurczakiem",
+        "sDescription": "sałata z grillowanym kurczakiem, grzanki",
+        "sPrice": "25.00 zł"
+      },
+      {
+        "sName" :"sałata z łososiem",
+        "sDescription": "sałata z grillowanym łososiem",
+        "sPrice": "30.00 zł"
+      },
+      {
+        "sName" :"caprese",
+        "sDescription": "(pomidory z mozarellą)",
+        "sPrice": "19.00 zł"
+      },
+      {
+        "sName" :"mozarella",
+        "sDescription": "na liściach szpinaku, pomidorki koktajlowe z sosem miodowo-balsamicznym i orzeszkami pinii",
+        "sPrice": "25.00 zł"
+      }
+    ]
+  },
+  {
+    "sCategory": "Makarony",
+    "sSlug": "makarony",
+    "sCategoryBg": "media/restaurant/makarony.jpg",
+    "sBannerBg": "media/background/restauracja/makarony.jpg",
+    "sPermalink": "restauracja/makarony",
+    "aDishesList": [
+      {
+        "sName" :"tagiatelle z krewetkami",
+        "sDescription": "i suszonymi pomidorami w sosie śmietanowym ze świeżą bazylią",
+        "sPrice": "29.00 zł"
+      },
+      {
+        "sName" :"tagiatelle z prawdziwkami",
+        "sDescription": "krewetkami, zieloną pietruszką",
+        "sPrice": "29.00 zł"
+      },
+      {
+        "sName" :"tagiatelle z piersią kurczaka",
+        "sDescription": "w sosie kurkowym",
+        "sPrice": "28.00 zł"
+      },
+      {
+        "sName" :"spaghetti Bolognese",
+        "sDescription": "",
+        "sPrice": "15.00 zł"
+      },
+      {
+        "sName" :" ",
+        "sDescription": "<sub><strong>Wszystkie makarony przygotowujemy na świeżo, czas oczekiwania wynosi do 30 minut</strong></sub>"
+      }
+    ]
+  },
+  {
+    "sCategory": "Desery",
+    "sSlug": "desery",
+    "sCategoryBg": "media/restaurant/desery.jpg",
+    "sBannerBg": "media/background/restauracja/desery.jpg",
+    "sPermalink": "restauracja/desery",
+    "aDishesList": [
+      {
+        "sName" :"maliny lub wiśnie",
+        "sDescription": "na gorąco z lodami i bitą śmietaną",
+        "sPrice": "14.00 zł"
+      },
+      {
+        "sName" :"deser lodowy",
+        "sDescription": "z owocami i bitą śmietaną",
+        "sPrice": "12.00 zł"
+      },
+      {
+        "sName" :"deser bezowy",
+        "sDescription": "z malinami i mascarpone",
+        "sPrice": "14.00 zł"
+      },
+      {
+        "sName" :"tort bezowy",
+        "sDescription": "w całości / porcja / minideser",
+        "sPrice": "120 zł / 15.00 zł / 8.00 zł"
+      },
+      {
+        "sName" :"ciasta domowe",
+        "sDescription": "(sernik, szarlotka)",
+        "sPrice": "8.00 zł"
+      },
+      {
+        "sName" :"sernik",
+        "sDescription": "z gorącymi malinami",
+        "sPrice": "10.00 zł"
+      },
+      {
+        "sName" :"naleśnik na słodko",
+        "sDescription": "(nutella, mascarpone, maliny)",
+        "sPrice": "18.00 zł"
+      },
+      {
+        "sName" :"tort bananowy",
+        "sDescription": "porcja",
+        "sPrice": "10.00 zł"
+      }
+    ]
+  },
+  {
+    "sCategory": "Napoje",
+    "sSlug": "napoje",
+    "sCategoryBg": "media/restaurant/napoje.jpg",
+    "sBannerBg": "media/background/restauracja/napoje.jpg",
+    "sPermalink": "restauracja/napoje",
+    "aDishesList": [
+      {
+        "sName" :"soki owocowe",
+        "sDescription": "(do wyboru)",
+        "sPrice": "5.00 zł",
+        "sWeigh": "0,25 l"
+      },
+      {
+        "sName" :"sok",
+        "sDescription": "ze świeżych owoców (pomarańcz, grejpfrut lub mix)",
+        "sPrice": "10.00 zł"
+      },
+      {
+        "sName" :"napoje gazowane",
+        "sDescription": "(do wyboru)",
+        "sPrice": "5.00 zł",
+        "sWeigh": "0,2 l"
+      },
+      {
+        "sName" :"dzbanek soku",
+        "sDescription": "(do wyboru)",
+        "sPrice": "12.00 zł",
+        "sWeigh": "1 l"
+      },
+      {
+        "sName" :"dzbanek wody",
+        "sDescription": "z cytryną",
+        "sPrice": "11.00 zł",
+        "sWeigh": "1 l"
+      },
+      {
+        "sName" :"NAPOJE GORĄCE",
+        "sDescription": " "
+      },
+      {
+        "sName" :"kawa z ekspresu",
+        "sPrice": "6.00 zł"
+      },
+      {
+        "sName" :"kawa z mlekiem",
+        "sPrice": "6.50 zł"
+      },
+      {
+        "sName" :"cappucino",
+        "sPrice": "8.00 zł"
+      },
+      {
+        "sName" :"cafe latte",
+        "sDescription": "latte machiatto",
+        "sPrice": "8.00 zł"
+      },
+      {
+        "sName" :"espresso",
+        "sPrice": "6.00 zł"
+      },
+      {
+        "sName" :"doppio espresso",
+        "sPrice": "8.00 zł"
+      },
+      {
+        "sName" :"czekolada",
+        "sDescription": "na gorąco z bitą śmietaną",
+        "sPrice": "12.00 zł"
+      },
+      {
+        "sName" :"herbata",
+        "sDescription": "zwykła i owocowa",
+        "sPrice": "6.00 zł"
+      },
+      {
+        "sName" :"herbata RITCHMONT",
+        "sDescription": "w dzbanuszku",
+        "sPrice": "7.50 zł"
+      },
+      {
+        "sName" :"herbata",
+        "sDescription": "z konfiturą",
+        "sPrice": "8.00 zł"
+      }
+    ]
+  },
+  {
+    "sCategory": "Alkohole",
+    "sSlug": "alkohole",
+    "sCategoryBg": "media/restaurant/alkohole.jpg",
+    "sBannerBg": "media/background/restauracja/alkohole.jpg",
+    "sPermalink": "restauracja/alkohole",
+    "aDishesList": [
+      {
+        "sName" :"ALKOHOLE NISKOPROCENTOWE",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName" :"piwo Primator",
+        "sDescription": "beczkowe",
+        "sPrice": "8.00 zł / 6.00 zł",
+        "sWeigh": "0.5 l / 0.3 l"
+      },
+      {
+        "sName" :"piwo Żywiec",
+        "sDescription": "butelkowe",
+        "sPrice": "8.00 zł",
+        "sWeigh": "0.5 l"
+      },
+      {
+        "sName" :"piwo Heineken",
+        "sDescription": "butelkowe",
+        "sPrice": "8.00 zł",
+        "sWeigh": "0.5 l"
+      },
+      {
+        "sName" :"piwo Warka",
+        "sDescription": "butelkowe",
+        "sPrice": "7.00 zł",
+        "sWeigh": "0.5 l"
+      },
+      {
+        "sName" :"piwo czeskie",
+        "sDescription": "butelkowe",
+        "sPrice": "8.00 zł",
+        "sWeigh": "0.5 l"
+      },
+      {
+        "sName" :"piwo regionalne",
+        "sDescription": "",
+        "sPrice": "8.00 zł",
+        "sWeigh": "0.5 l"
+      },
+      {
+        "sName" :"piwo grzane",
+        "sDescription": "z goździkami, cynamonem i imbirem",
+        "sPrice": "10.00 zł",
+        "sWeigh": "0.5 l"
+      },
+      {
+        "sName" :"WÓDKI",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName" :"Wódka Luksusowa",
+        "sPrice": "55.00 zł / 6.00 zł",
+        "sWeigh": "0.5 l / kieliszek 40g"
+      },
+      {
+        "sName" :"Finlandia",
+        "sPrice": "70.00 zł / 7.00 zł",
+        "sWeigh": "0.5 l / kieliszek 40g"
+      },
+      {
+        "sName" :"Absolut",
+        "sPrice": "70.00 zł / 7.00 zł",
+        "sWeigh": "0.5 l / kieliszek 40g"
+      },
+      {
+        "sName" :"Bols",
+        "sPrice": "55.00 zł / 6.00 zł",
+        "sWeigh": "0.5 l / kieliszek 40g"
+      },
+      {
+        "sName": "DRINKI",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName": "Aperol",
+        "sPrice": "18.00 zł"
+      },
+      {
+        "sName" :"WINA",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName" :"kieliszek wina",
+        "sDescription": "białego / czerwonego",
+        "sPrice": "9.00 zł",
+        "sWeigh": "150 ml"
+      },
+      {
+        "sName" :"wino grzane",
+        "sDescription": "z pomarańczą, goździkami i cynamonem",
+        "sPrice": "10.00 zł",
+        "sWeigh": "200 ml"
+      },
+      {
+        "sName": "WINA BIAŁE",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName": "Panul Reserve",
+        "sDescription": "<i>Chile/ Chardonnay, Sauvignon Blanc/ wytrawne</i>",
+        "sPrice": "70.00 zł"
+      },
+      {
+        "sName": "Vina Sol",
+        "sDescription": "<i>Hiszpania/ Chardonnay/ wytrawne</i>",
+        "sPrice": "60.00 zł"
+      },
+      {
+        "sName": "Winnica Kinga Wino Białe",
+        "sDescription": "",
+        "sPrice": "70.00 zł"
+      },
+      {
+        "sName": "Muškát Moravský",
+        "sDescription": "<i>muškát moravský/ półwytrawne</i>",
+        "sPrice": "60.00 zł"
+      },
+      {
+        "sName": "Castillo de la Vereda",
+        "sDescription": "<i>Hiszpania/ wieloszczepowe/ półsłodkie</i>",
+        "sPrice": "60.00 zł"
+      },
+      {
+        "sName": "Riesling",
+        "sDescription": "<i>wytrawne</i>",
+        "sPrice": "70.00 zł",
+        "sWeigh": "1 l"
+      },
+      {
+        "sName": "Sol de Chile",
+        "sDescription": "<i>Chile/ Chardonnay/ wytrawne</i>",
+        "sPrice": "58.00 zł"
+      },
+      {
+        "sName": "Moravske Zemske Vino",
+        "sDescription": "<i>wytrawne</i>",
+        "sPrice": "58.00 zł"
+      },
+      {
+        "sName": "Chardonnay",
+        "sDescription": "<i>Mołdawsko-francuskie/ półsłodkie</i>",
+        "sPrice": "55.00 zł"
+      },
+      {
+        "sName": "Cono Sur Sauvignon Blanc",
+        "sDescription": "<i>Chile/ wytrawne</i>",
+        "sPrice": "58.00 zł"
+      },
+      {
+        "sName": "WINA RÓŻOWE",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName": "Winnica Kinga Wino Różowe",
+        "sDescription": "<i></i>",
+        "sPrice": "70.00 zł"
+      },
+      {
+        "sName": "WINA CZERWONE",
+        "sDescription": "&nbsp;"
+      },
+      {
+        "sName": "Sutter Home Cabernet Sauvignon",
+        "sDescription": "<i>California/ wytrawne</i>",
+        "sPrice": "58.00 zł"
+      },
+      {
+        "sName": "Panul Cabernet Sauvignon",
+        "sDescription": "<i>Chile/ wytrawne</i>",
+        "sPrice": "70.00 zł"
+      },
+      {
+        "sName": "Kazayak Vin Cabernet-Sauvignon",
+        "sDescription": "<i>Mołdawsko-francuskie/ półsłodkie</i>",
+        "sPrice": "60.00 zł"
+      },
+      {
+        "sName": "Misiones De Rengo",
+        "sDescription": "<i>Chile/ wytrawne</i>",
+        "sPrice": "70.00 zł"
+      },
+      {
+        "sName": "Casillero del Diablo Carmenere",
+        "sDescription": "<i>Chile/wytrawne</i>",
+        "sPrice": "70.00 zł"
+      },
+      {
+        "sName": "Sangre de Toro",
+        "sDescription": "<i>Hiszpania/ wytrawne</i>",
+        "sPrice": "65.00 zł"
+      },
+      {
+        "sName": "Cono Sur Bicicleta",
+        "sDescription": "<i>Chile/ wytrawne</i>",
+        "sPrice": "58.00 zł"
+      },
+      {
+        "sName": "Saint Emilion Grand Cru",
+        "sDescription": "<i>Francja/ wytrawne</i>",
+        "sPrice": "100.00 zł"
+      },
+      {
+        "sName": "Sol De Chile Varietal Cabernet Sauvignon",
+        "sDescription": "<i>Chile/ wytrawne</i>",
+        "sPrice": "58.00 zł"
+      },
+      {
+        "sName": "Feudo Di Santa Croce LXXIV Primitivo",
+        "sDescription": "<i>Włochy/wytrawne</i>",
+        "sPrice": "120.00 zł"
+      }
+    ]
+  }
+]

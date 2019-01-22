@@ -1,0 +1,274 @@
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+/* Banner */
+
+	.banner {
+		padding: 4em 0 2em 0;
+		background: #f6f6f6;
+		text-align: center;
+
+		&#banner-imprezy {
+				@include padding(6em,0);
+		}
+		&#banner {
+			padding: 6em 0 0 0;
+		}
+
+		h2 {
+			font-size: 3.4em;
+			color: _palette(bg);
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		p {
+			font-size: 1.2em;
+			margin-bottom: 1.75em;
+			color: _palette(bg);
+		}
+
+		@include breakpoint(large) {
+			h2 {
+				font-size: 3.5em;
+			}
+		}
+
+		@include breakpoint(small) {
+			// @include padding(0,0,(4em, 0, 4em, 0));
+
+			h2 {
+				font-size: 2.25em;
+			}
+
+			p {
+				font-size: 1.25em;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			// @include padding(4em, 4em);
+		}
+
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			padding: 0 3.5em;
+			@include breakpoint(xsmall) {
+				padding: 0 0.5em;
+			}
+		}
+		&.expand {
+			@include padding(0,0,(25em, 0, 0.5em, 0));
+
+			@include breakpoint(xlarge) {
+				@include padding(0,0,(25em, 0, 0.5em, 0));
+			}
+
+			@include breakpoint(large) {
+				@include padding(21em, 0);
+			}
+
+			@include breakpoint(medium) {
+				@include padding(21em, 2em);
+			}
+
+			@include breakpoint(small) {
+				@include padding(19em, 2em);
+			}
+
+			@include breakpoint(xsmall) {
+				@include padding(19em, 2em);
+			}
+		}
+	}
+
+/* slider */
+	.slider {
+		@include padding(0,0);
+		position: relative;
+		background: #f6f6f6;;
+		height: 100%;
+		text-align: center;
+		overflow: hidden;
+
+		h2 {
+			font-size: 3.4em;
+			color: _palette(bg);
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		p {
+			font-size: 1.2em;
+			margin-bottom: 1.75em;
+			color: _palette(bg);
+		}
+
+		.slider-control {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 10%;
+			height: 100%;
+			text-align: center;
+			z-index: 15;
+			// @include padding(0,0,(17em, 0, 0.5em, 0));
+			opacity: 0.5;
+			@include vendor('transition', 'all #{_duration(nav)} ease-in-out');
+			&:hover {
+				opacity: 1;
+			}
+			i {
+				color: white; //rgba(255,255,255,0.5);
+				font-size: 3em;
+				z-index: 13;
+				display: inline-block;
+				@include vertical-align();
+				@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
+			}
+			&.left {
+				left: 0;
+				background: -moz-linear-gradient(left,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.01) 99%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+			}
+			&.right {
+				right: 0;
+				background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=1 ); /* IE6-9 */
+			}
+		}
+
+		.slider-indicators {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+			padding: 0;
+			width: 100%;
+			z-index: 15;
+			.indicator {
+				display: inline-block;
+				position: relative;
+				a {
+					color: white;
+				}
+			}
+		}
+
+		@include breakpoint(xlarge) {
+			@include padding(0,0,(7em, 0, 0.5em, 0));
+		}
+
+		@include breakpoint(large) {
+			@include padding(5em, 0);
+
+			h2 {
+				font-size: 3.5em;
+			}
+		}
+
+		@include breakpoint(medium) {
+			@include padding(6em, 2em);
+		}
+
+		@include breakpoint(small) {
+			@include padding(4em, 2em);
+
+			h2 {
+				font-size: 2.25em;
+			}
+
+			p {
+				font-size: 1.25em;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			@include padding(4em, 2em);
+		}
+
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			padding: 0 3.5em;
+		}
+		.slide {
+			display: block;
+			position: absolute;
+			top: 0;
+			left:0;
+			width: 100%;
+			opacity: 0;
+			@include vendor('transition', 'all #{_duration(long)} cubic-bezier(.17,.67,.41,1.01)');
+			z-index: 10;
+
+			&.active {
+				display: block;
+				z-index: 11;
+				opacity: 1;
+				.slide-title, .slide-intro, .slide-actions {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+			.slide-title, .slide-intro, .slide-actions {
+				transform: translateX(150%);
+				opacity: 0;
+				transition-property: all;
+  			transition-duration: 1s;
+  			transition-timing-function: cubic-bezier(.17,.67,.41,1.01);
+				transition-delay: 0.2s;
+			}
+			.slide-intro {
+				transition-delay: 0.25s;
+			}
+			.slide-actions {
+				transition-delay: 0.4s;
+			}
+
+		}
+		&.expand, &.expand .slide {
+			height: 650px;
+			@include padding(0,0,(23em, 0, 0.5em, 0));
+
+			.slider-control {
+					@include padding(0,0,(16em, 0, 0.5em, 0));
+			}
+			// @include breakpoint(xlarge) {
+			// 	@include padding(0,0,(25em, 0, 0.5em, 0));
+			// }
+
+			// @include breakpoint(large) {
+			// 	@include padding(21em, 0);
+			// }
+			//
+			@include breakpoint(medium) {
+				.slider-control {
+						@include padding(0,0,(40em, 0, 0.5em, 0));
+				}
+			}
+
+			@include breakpoint(small) {
+				.slider-control {
+						width: 12%;
+				}
+			}
+			@include breakpoint(xsmall) {
+				@include padding(0,0,(16em, 0, 0.5em, 0));
+				.slider-control {
+						width: 15%;
+				}
+			}
+		}
+
+	}

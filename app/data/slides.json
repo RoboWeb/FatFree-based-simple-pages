@@ -1,0 +1,14 @@
+[
+  {
+    "sTitle" : "Hotel***",
+    "sIntro" : "Dwadzieścia bogato wyposażonych pokoi i apartamentów w trzygwiazdkowym hotelu w centrum miasta. Marmurowe łazienki, nieograniczony dostęp do internetu i niezwykle wygodne łóżka z pościelą pachnącą świeżością.",
+    "sBackground" : "media/banner-1.jpg",
+    "sUrl": "pokoje"
+  },
+  {
+    "sTitle" : "Restauracja",
+    "sIntro" : "W stylowych i eleganckich wnętrzach Restauracji Retro dbamy o bogactwo smaków. Posiłki przygotowywane są ze świeżych i naturalnych produktów najwyższej jakości.",
+    "sBackground" : "media/restauracja-1-bg.jpg",
+    "sUrl": "restauracja"
+  }
+]

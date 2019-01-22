@@ -1,0 +1,53 @@
+<h4>Napisz do nas</h4>
+<form id="contactForm" action="{{ @BASE }}/contact" method="post">
+  <div class="row uniform">
+    <div class="12u$" v-bind:class="{ 'filled': fields.name.value, 'error': fields.name.error }">
+      <input type="text" name="name" id="name" value="" placeholder="Imię i Nazwisko*" v-model="fields.name.value">
+    </div>
+    <div class="12u$" v-bind:class="{ 'filled': fields.email.value, 'error': fields.email.error }">
+      <input type="text" name="email" id="email" value="" placeholder="E-mail*" v-model="fields.email.value">
+    </div>
+    <div class="12u$" v-bind:class="{ 'filled': fields.phone.value, 'error': fields.phone.error }">
+      <input type="text" name="phone" id="phone" value="" placeholder="Telefon*" v-model="fields.phone.value">
+    </div>
+    <div class="12u$" v-bind:class="{ 'filled': fields.message.value, 'error': fields.message.error }">
+      <textarea name="message" id="message" placeholder="Wiadomość*" rows="4" v-model="fields.message.value"></textarea>
+    </div>
+    <div class="12u$" v-bind:class="{ 'error': fields.agreement.error }">
+      <input type="checkbox" name="agreement" id="agreement" v-model="fields.agreement.value">
+      <label for="agreement" v-html="fields.agreement.label"></label>
+    </div>
+    <div class="12u$" v-bind:class="{ 'error': fields.accept.error }">
+      <input type="checkbox" name="accept" id="accept" v-model="fields.accept.value">
+      <label for="accept" v-html="fields.accept.label"></label>
+    </div>
+    <div class="3u 12u$(small)">
+      <a href="#" class="button special" v-bind:class="{ 'disabled': btnSubmitStatus === 3 }" v-on:click.stop.prevent="submitForm">
+        Wyślij
+      </a>
+
+      <!-- <a href="javascript:void(0);" class="button special" >Wyślij</a> -->
+    </div>
+    <div class="9u 12u$(small)">
+      <p style="line-height: 12px;"><sub><strong>UWAGA!</strong><br />Rezerwacja dokonana drogą mailową jest ważna dopiero po potwierdzeniu przez hotel dostępności pokojów.</sub></p>
+    </div>
+  </div>
+  <div v-if="notification.status > 1" transition="fade" class="notification" v-bind:class="{ 'error': notification.status === 3, 'success': notification.status === 2 }" >
+    <div class="notification-wrapper" v-bind:class="{ 'align-left': notification.status === 3, 'align-center': notification.status === 2}">
+      <h4>
+        <i class="fa fa-lg" v-bind:class="{ 'fa-flash': notification.status === 3, 'fa-bell': notification.status === 2 }">&nbsp;</i>
+        <span v-text="notification.header"></span>
+      </h4>
+      <ol v-bind:class="{ 'alt': notification.status === 2 }">
+        <li v-for="stat in notification.body" style="color: white;">
+          <!-- <span v-if="stat.label">Pole: <i v-text="stat.label"></i> - </span> -->
+          <strong v-html="stat.cont" style="color: white;"></strong>
+        </li>
+      </ol>
+      <a href="javascript:void(0);" class="close" v-on:click.stop.prevent="closeNotification"><i class="fa fa-lg fa-close">&nbsp;</i></a>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+var sUrl = "{{ @BASE }}/contact";
+</script>

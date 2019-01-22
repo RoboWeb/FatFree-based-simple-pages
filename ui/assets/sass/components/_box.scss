@@ -1,0 +1,37 @@
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+/* Box */
+
+	.box {
+		border-radius: _size(border-radius);
+		border: solid _size(border-width) _palette(border);
+		margin-bottom: _size(element-margin);
+		padding: 1.5em;
+
+		> :last-child,
+		> :last-child > :last-child,
+		> :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		&.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 1.5em 1em;
+			background: _palette(accent2, border-bg);
+			ul.icons li, ul.icons li:last-child {
+				font-size: 3.5em;
+				padding: 0 0.2em;
+			}
+		}
+	}
+	/* Google Map */
+	#google-map {
+		a.gm-emergency-link {
+			display: block;
+	    position: relative;
+	    bottom: -6px;
+	    text-align: center;
+			height: 100%;
+		}
+	}

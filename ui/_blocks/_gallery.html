@@ -1,0 +1,22 @@
+<div id="gallery" class="container top-space">
+  <div class="row uniform 0%" id="gallery-main">
+    <div class="12u$ ">
+      <span class="image fit">
+        <img id="gallery-main-img" src="{{ @gimg.0.sPath }}" transition="fade" alt="{{ @gimg.0.sFile }}" />
+      </span>
+    </div>
+    <a id="previousImage" href="javascript:void(0);" v-on:click.stop.prevent="showPrevImg"><i class="icon-retro-to-left"></i></a>
+    <a id="nextImage" href="javascript:void(0);" v-on:click.stop.prevent="showNextImg"><i class="icon-retro-to-right"></i></a>
+  </div>
+  <div class="row uniform 0%" id="gallery-img-container">
+    <ul class="gallery-img-list">
+      <repeat group="{{ @gimg }}" key="{{ @indx }}" value="{{ @img }}">
+        <li id="{{ 'img-'.@indx }}" class="2u gallery-img {{ @indx < 6 ? ( @indx == 0 ? 'active visible' : 'visible') : '' }}" v-bind:class="{ 'visible': {{ @indx }} >= firstVisibleImgIndx && {{ @indx }} <= lastVisibleImgIndx, 'active': {{ @indx }} === activeImgIndx }">
+          <a href="#" class="image fit" title="{{ @mPage.sTitle}}" v-on:click.stop.prevent="setActiveImg({{ @indx }})">
+            <img src="{{ @img.sPath }}" alt="{{ @img.sFile }}" />
+          </a>
+        </li>
+      </repeat>
+    </ul>
+  </div>
+</div>

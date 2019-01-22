@@ -1,0 +1,22 @@
+<div id="main" class="container top-space">
+  <div class="row">
+    <div class="-2u 8u 12u$(small) align-center">
+      <p>
+        W stylowych i eleganckich wnętrzach Restauracji Retro dbamy o bogactwo smaków. Posiłki przygotowywane są ze świeżych i naturalnych produktów najwyższej jakości. O komfort Gości dba profesjonalna obsługa a wyjątkową atmosferę lokalu dopełnia klimatyczny, opalany drewnem kominek. W sezonie letnim do dyspozycji Gości oddajemy także piękny Ogródek, gdzie w otoczeniu roślin oraz starych zdjęć obiektu można cieszyć się posiłkiem na świeżym powietrzu. Restauracja Retro to miejsce idealne zarówno na imprezy zorganizowane, rodzinne obiady
+        jak i spotkania ze znajomymi.
+      </p>
+      <hr class="major short" />
+    </div>
+  </div>
+  <div class="row gallery">
+    <repeat group="{{ @mPage.aVariables.aDishes }}" key="{{ @indx }}" value="{{ @dish }}">
+      <div class="{{ $indx % 3 === 2 ? '4u$' : '4u' }} {{ $indx % 2 === 1 ? '6u$(small)' : '6u(small)' }} 12u$(xsmall) align-center">
+        <div class="image fit">
+          <img src="{{ @dish.sCategoryBg }}" alt="{{ @dish.sCategory }}"/>
+          <a href="{{ @dish.sPermalink }}" class="button alt">{{ @dish.sCategory }}</a>
+        </div>
+      </div>
+    </repeat>
+  </div>
+</div>
+<include href="_blocks/_banner-imprezy.html" />

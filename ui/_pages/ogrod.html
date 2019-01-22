@@ -1,0 +1,38 @@
+<div id="main" class="container top-space">
+  <div class="row">
+    <div class="6u 12u$(small) align-left">
+      <h3>{{ @mPage.sTitle }}</h3>
+      <hr class="short"/>
+      <p>Tajemniczy ogród w centrum miasta? Między budynkami jest ukryte podwórko, które
+        przemieniliśmy w prawdziwą oazę spokoju. To urokliwe miejsce stało się ucieczką dla
+        zapracowanych biznesmenów, turystów zmęczonych po podróży czy rodzin chcących odpocząć
+        poza domem. Ogród okalają jasne ściany, na których wiszą fotografie dawnej Zielonej Góry, a w
+        chłodniejsze wieczory goście mogą ogrzać się przy kominku.</p>
+        <p>Ogród jest dostępny dla gości hotelu i restauracji w sezonie letnim, gdzie można spokojnie zjeść
+          lub odpocząć przy kieliszku wina wśród zieleni.</p>
+        </div>
+        <div class="6u$ 12u$(small)">
+          <span class="image fit">
+            <img src="{{ @mPage.aVariables.sMainImage }}" alt="{{ @mPage.sTitle }}" />
+          </span>
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="4u 6u(medium) 12u$(small) align-center">
+          <a href="{{ @BASE }}/galeria/ogrod" class="image fit">
+            <img src="{{ @mPage.aVariables.sGallery.1.sPath }}" alt="{{ @img.sFile }}"/>
+          </a>
+        </div>
+        <div class="4u 6u$(medium) 12u$(small) align-center">
+          <a href="{{ @BASE }}/galeria/ogrod" class="image fit">
+            <img src="{{ @mPage.aVariables.sGallery.2.sPath }}" alt="{{ @img.sFile }}"/>
+          </a>
+        </div>
+        <div class="4u$ 12u$(medium) align-center">
+          <a href="{{ @BASE }}/galeria/ogrod" class="image fit">
+            <img src="{{ @mPage.aVariables.sGallery.4.sPath }}" alt="{{ @img.sFile }}"/>
+          </a>
+        </div>
+
+      </div>
+    </div>
